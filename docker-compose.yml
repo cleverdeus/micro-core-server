@@ -1,0 +1,44 @@
+version: '3.9'
+services:
+  api:
+    build: ./api
+    container_name: mc_api
+    restart: always
+    hostname: api
+    env_file:
+      - ./.env
+    ports:
+      - "4000:4000"
+    networks:
+      - backend
+  user:
+    build: ./users
+    container_name: mc_user
+    restart: always
+    hostname: users
+    env_file:
+      - ./.env
+    ports:
+     - "4001:4001"
+    networks:
+      - backend
+
+    links:
+      - mongouserdb
+  mongouserdb:
+    image: 'mongo:latest'
+    restart: always
+    container_name: mc_mongo
+    environment:
+      MONGO_INITDB_ROOT_USERNAME: ${MONGO_ROOT_USER}
+      MONGO_INITDB_ROOT_PASSWORD: ${MONGO_ROOT_PASSWORD}
+      MONGO_INITDB_DATABASE: ${MONGO_DATABASE}
+      MONGO_USER: ${MONGO_USER}
+      MONGO_PASSWORD: ${MONGO_PASSWORD}
+    ports:
+      - 27017:27017
+    networks:
+      - backend
+networks:
+  backend:
+    driver: bridge

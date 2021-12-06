@@ -1,0 +1,21 @@
+{
+  "name": "microservice",
+  "version": "1.0.38",
+  "description": "NestJS + MongoDb + Microservice",
+  "main": "",
+  "scripts": {
+    "prepare": "husky install"
+  },
+  "contributors": [
+    {
+      "name": "Alexander Hunter",
+      "email": "icehuntmen@gmail.com"
+    }
+  ],
+  "license": "MIT",
+  "dependencies": {
+    "cli-color": "^2.0.1",
+    "husky": "^7.0.4",
+    "prettier": "^2.5.0"
+  }
+}
