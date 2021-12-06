@@ -1,0 +1,9 @@
+[submodule "api"]
+	path = api
+	url = https://github.com/cleverdeus/micro-api.git
+[submodule "users"]
+	path = users
+	url = https://github.com/cleverdeus/micro-users.git
+[submodule "profiles"]
+	path = profiles
+	url = https://github.com/cleverdeus/micro-profile.git
