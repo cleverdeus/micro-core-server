@@ -1,0 +1,17 @@
+version: '3.9'
+services:
+  api:
+    build: ./api
+    container_name: mc_api
+    restart: always
+    hostname: api
+    env_file:
+      - ./.env
+    ports:
+      - "4000:4000"
+    networks:
+      - backend
+
+networks:
+  backend:
+    driver: bridge
