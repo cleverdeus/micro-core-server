@@ -17,7 +17,7 @@
 ```bash
 # Global variables
 API_GATEWAY_PORT=4000
-BASE_URI=http://localhost
+BASE_URL=http://localhost
 JWT_SECRET=45e6adea-fd8e-40d7-a245-d0cc234e3ccf
 
 ## Brute force is used for auth endpoints
