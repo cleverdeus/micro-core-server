@@ -18,7 +18,7 @@
 # Global variables
 API_GATEWAY_PORT=4000
 BASE_URL=http://localhost
-JWT_SECRET=45e6adea-fd8e-40d7-a245-d0cc234e3ccf
+JWT_SECRET=4532452345234523452353452345234fdgfgs
 
 ## Brute force is used for auth endpoints
 BRUTE_FREE_RETRIES = 50          # 50 requests
