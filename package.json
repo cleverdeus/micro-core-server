@@ -1,11 +1,11 @@
 {
   "name": "microservice",
-  "version": "1.0.51",
+  "version": "1.0.52",
   "description": "NestJS + MongoDb + Microservice",
   "main": "",
   "scripts": {
-    "upgrade": "git submodule update --recursive --remote",
-    "update": "git submodule update --recursive",
+    "up:remote": "git submodule update --recursive --remote",
+    "up:date": "git submodule update --recursive",
     "prepare": "husky install"
   },
   "contributors": [
